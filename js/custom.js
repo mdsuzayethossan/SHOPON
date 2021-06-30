@@ -132,7 +132,17 @@ $(window).scroll(function(){
   }
 
 });
+//scroll indicator
+window.onscroll = function (){myfunction()};
+function myfunction () {
+  var winscroll =document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scroll = (winscroll / height) * 100;
+  document.getElementById("progress").style.width = scroll + "%";
 
-      
+}
+
+
+
 
 });

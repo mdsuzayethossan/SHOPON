@@ -40,6 +40,19 @@ span {
 }
 
 /* COMMON CSS ENDS */
+
+
+/* progress css goes here */
+#progress {
+    width: 0%;
+    height: 2px;
+    top: 0;
+    left: 0;
+    background-color: var(--allhover);
+    position: fixed;
+    z-index: 999999999;
+  
+}
 /* navbar part goes here*/
 :root {
     --allbg: #000000; 
